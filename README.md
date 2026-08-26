@@ -1,6 +1,6 @@
 # 🌱 ReServe — Campus Food Waste Reduction & Redistribution Platform
 
-> **Connecting campus dining halls, local eateries, and student organizations to reduce food waste and provide affordable meals across campus.**
+> **Connecting campus dining halls, local eateries, and student organizations to eliminate food waste and provide affordable meals across campus.**
 
 [![React](https://img.shields.io/badge/React-19-61dafb?logo=react&logoColor=black)](https://react.dev/)
 [![Vite](https://img.shields.io/badge/Vite-7-646cff?logo=vite&logoColor=white)](https://vitejs.dev/)
@@ -10,46 +10,67 @@
 
 ---
 
-## 📸 Application Screenshots
+## 📸 Application Showcase
 
-### 1. Surplus Food Marketplace (`/buy`)
-Browse available surplus food listings in real time, filter by dining hall, dietary restrictions (Halal, Vegan, Gluten-Free, High Protein), or max price, and reserve meals within designated pickup windows.
+### 1. Impact & Management Dashboard (`/home`)
+Track campus-wide impact metrics in real time including total food donations, meals provided to students, and pounds of food diverted from landfills. Quick-action shortcuts allow instant switching between buying and selling flows.
 
-![Surplus Food Marketplace](docs/screenshots/marketplace_buy.png)
-
----
-
-### 2. Impact & Management Dashboard (`/home`)
-Track campus-wide impact metrics including total meals provided, pounds of food diverted from waste, and fast navigation for buyers and sellers.
-
-![Impact Dashboard](docs/screenshots/home_dashboard.png)
+![Impact Dashboard](docs/screenshots/01_home_impact_dashboard.png)
 
 ---
 
-### 3. Post a Food Donation / Listing (`/sell`)
-Dining hall managers and restaurant partners can quickly list surplus meals with available units, pricing, pickup windows, allergen tags, and instructions.
+### 2. Surplus Food Marketplace (`/buy`)
+Discover available surplus food listings in real time. Search by item title, filter by dining hall (*Ikenberry, ISR, FAR*), filter by dietary needs (*Vegetarian, Vegan, Halal, Gluten-Free, High Protein*), or set a maximum budget.
 
-![Post Donation Form](docs/screenshots/create_listing_sell.png)
+![Surplus Food Marketplace](docs/screenshots/02_food_marketplace.png)
 
 ---
 
-### 4. Student Profile & Orders (`/profile`)
-Students and buyers can view their active reservations, past orders, and pickup verification details.
+### 3. Food Item Details & Reservation Modal
+Clicking on any food item opens an interactive detail modal displaying comprehensive nutritional values (calories, protein, carbs, fat), pickup instructions, exact time windows, and a quantity selector for reservations.
 
-![Student Profile and Orders](docs/screenshots/student_orders_profile.png)
+![Food Detail & Reservation Modal](docs/screenshots/03_reserve_food_modal.png)
+
+---
+
+### 4. Post a Food Donation / Listing (`/sell`)
+Dining hall staff, campus organizations (RSOs), and local restaurant partners can list surplus meals in seconds by specifying quantities, unit labels, pricing, pickup windows, and allergen tags.
+
+![Post Donation Form](docs/screenshots/04_post_donation_form.png)
+
+---
+
+### 5. Student Profile & Order History (`/profile`)
+Students and buyers can view their active reservations, pickup verification details, order statuses (*Pending, Confirmed, Picked Up*), and past order history.
+
+![Student Profile & Order History](docs/screenshots/05_student_order_history.png)
+
+---
+
+### 6. Authentication — Sign In (`/login`)
+Secure, clean authentication supporting both email/password login and one-click Google OAuth 2.0 Sign-In.
+
+![Sign In Page](docs/screenshots/06_auth_login.png)
+
+---
+
+### 7. Authentication — Sign Up & Role Selection (`/signup`)
+Seamless onboarding allowing users to register either as a **Student** (Buyer) or **Dining Hall Staff / Organization** (Seller).
+
+![Sign Up Page](docs/screenshots/07_auth_signup.png)
 
 ---
 
 ## ✨ Key Features
 
-- **🛒 Real-Time Surplus Food Marketplace**: Dynamic browsing and reservation system with real-time unit counts and pickup window countdowns.
-- **🏷️ Smart Dietary & Allergen Filters**: Filter by dining hall (*Ikenberry, ISR, FAR*), dietary preferences (*Vegetarian, Vegan, Pescatarian, High Protein, Halal, Gluten Free*), and price.
-- **👥 Role-Based Access Control**:
-  - **Dining Hall Staff / Sellers**: Post donations, manage active inventory, track donation metrics.
-  - **Students / Buyers**: Discover surplus meals, place reservations, view order history.
-- **⏰ Automated Expiration Management**: Built-in background cleanup job runs daily to mark unclaimed listings as expired once their pickup window passes.
-- **📊 Impact Tracking**: Quantifies diverted food waste (meals saved and pounds diverted) to foster sustainability.
-- **🔐 Secure Authentication**: JWT-based token authentication with optional Google OAuth 2.0 integration.
+- **🛒 Real-Time Surplus Marketplace**: Live inventory management with real-time unit counts and pickup window countdowns.
+- **🏷️ Smart Dietary & Allergen Filters**: Filter by dining location (*Ikenberry, ISR, FAR*), dietary preferences (*Vegetarian, Vegan, Pescatarian, High Protein, Halal, Gluten-Free*), and price.
+- **👥 Role-Based Access Control (RBAC)**:
+  - **Dining Hall Staff / Sellers**: Post donations, manage active inventory, and track sustainability impact.
+  - **Students / Buyers**: Discover discounted meals, place instant reservations, and track pickup orders.
+- **⏰ Automated Expiration Background Job**: Built-in automated scheduler runs daily to mark unclaimed listings as expired once their pickup window concludes.
+- **📊 Real-Time Impact Tracking**: Quantifies diverted food waste (meals saved and pounds diverted) to foster sustainability and transparency.
+- **🔐 Secure Authentication**: JWT-based token authentication with encrypted password hashing (`bcrypt`) and Google OAuth 2.0.
 
 ---
 
