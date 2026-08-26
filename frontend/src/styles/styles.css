@@ -208,7 +208,7 @@ textarea:focus{
 .error{ color:var(--danger); font-size:.92rem; }
 
 .input[aria-invalid="true"],
-.input:invalid{
+.input:user-invalid{
   border-color:rgba(217,45,32,0.7);
   background:rgba(217,45,32,0.06);
 }
