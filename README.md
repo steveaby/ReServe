@@ -61,6 +61,27 @@ Seamless onboarding allowing users to register either as a **Student** (Buyer) o
 
 ---
 
+### 8. Dining Staff Surplus Inventory & Postings Management (`/profile`)
+Dining hall managers and chefs can view their active inventory of food listings, track quantities remaining, observe active reservation pickup windows, and monitor overall fulfillment in one unified dashboard.
+
+![Seller Inventory Management](docs/screenshots/08_seller_inventory_management.png)
+
+---
+
+### 9. Role-Based Access Control (RBAC) & Route Safeguards
+Anticipatory client and server-side route guards prevent unauthorized access, ensuring only verified dining staff and organization coordinators can access seller tools while guiding students back to the active food marketplace.
+
+![RBAC Access Denied Safeguard](docs/screenshots/09_rbac_access_guard.png)
+
+---
+
+### 10. Instant Search & Smart Dietary/Location Filtering (`/buy`)
+Dynamic search allows students to instantly narrow down available meals by keywords (e.g., "Pizza", "Salad"), dining locations (*Ikenberry, ISR, FAR*), or dietary needs (*Vegetarian, Vegan, Halal, Gluten-Free, High Protein*).
+
+![Filtered Marketplace Search](docs/screenshots/10_marketplace_filtered_search.png)
+
+---
+
 ## ✨ Key Features
 
 - **🛒 Real-Time Surplus Marketplace**: Live inventory management with real-time unit counts and pickup window countdowns.
